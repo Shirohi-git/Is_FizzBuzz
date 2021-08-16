@@ -9,4 +9,8 @@ function fizzbuzz(num) {
 
 // fizzbuzz(parseInt(require('fs').readFileSync('/dev/stdin', 'utf8')));
 
-const input = document.getElementById("input");
+function input_number() {
+    const input = parseInt(document.getElementById("input").value);
+    console.log(input)
+    const output = document.getElementById("output").innerHTML = `${fizzbuzz(input)}`;
+}
